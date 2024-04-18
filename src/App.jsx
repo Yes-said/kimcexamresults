@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import About from './Components/Pages/About';
 import Contacts from './Components/Pages/Contacts';
-import Services from './Components/Pages/Services';
+import Documentation from './Components/Pages/Documentation';
 import Home from './Components/Pages/Home';
 function App(){
 return (
@@ -13,7 +13,7 @@ return (
   <Route path="/" element={<Home/>}/>
 <Route path="/About" element={<About/>}/>
 <Route path="/Contacts" element={<Contacts/>}/>
-<Route path="/Services" element={<Services/>}/>
+<Route path="/Documentation" element={<Documentation/>}/>
   </Routes>
   </div>
   );

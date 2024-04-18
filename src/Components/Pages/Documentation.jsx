@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Services = () => {
+const Documentation = () => {
   return (
     <div>
         <div>
@@ -72,4 +72,4 @@ Its main purpose was to train electronic engineering and technicians
   )
 }
 
-export default Services
+export default Documentation
