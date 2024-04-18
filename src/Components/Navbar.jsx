@@ -6,6 +6,7 @@ export const Navbar = () => {
   return (
   <nav>
         <Link to="/" className='title'>
+            
             Website
         </Link>
         <div className='menu' onClick={() =>{
