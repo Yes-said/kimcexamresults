@@ -9,6 +9,7 @@ import Sidebar from './Components/Sidebar';
 import Courses from './Components/Pages/Courses';
 import Results from './Components/Pages/Results';
 import Students from './Components/Pages/Students';
+import Footer from './Components/Footer';
 function App(){
 return (
 <div className="w-full h-screen bg-back
@@ -27,6 +28,7 @@ object-cover flex items-center">
 <Route path="/Results" element={<Results/>}/>
 <Route path="/Students" element={<Students/>}/>
   </Routes>
+  <Footer/>
   </div>
   );
 }
