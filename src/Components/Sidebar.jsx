@@ -15,7 +15,7 @@ const Sidebar = () => {
           <Link to="/Courses">Courses</Link>
         </li>
         <li>
-          <Link to="/C">Results</Link>
+          <Link to="/Results">Results</Link>
         </li>
         <li>
           <Link to="/Students">Students</Link>
