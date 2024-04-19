@@ -1,0 +1,69 @@
+/* Sidebar.css */
+
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: skyblue;
+    position: sticky;
+   
+    color: #fff;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+  }
+  
+  .sidebar ul li a:hover {
+ 
+        background-color: orange;
+    }
+  
+    nav .menu span {
+        height: 0.4rem;
+        width: 100%;
+        background-color: white;
+        border-radius: 0.2rem;
+    }
+    @media (max-width: 480px) {
+        nav .menu {
+            display: flex;
+        }
+        
+        nav {
+            flex-direction: column;
+            align-items: start;
+        }
+        
+        nav ul {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 0.25rem;
+        }
+        nav ul.open {
+            display: flex;
+        }
+        
+        nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+        
+        nav ul li a {
+            margin: 0.2rem 0.5rem;
+        }
+        }
+  
