@@ -1,33 +1,45 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'
-export const Navbar = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
+import { Layout, Menu } from 'antd';
+
+
+const { Sider } = Layout;
+
+const Navbar = () => {
+  const [collapsed, setCollapsed] = useState(false);
+
+  const toggleCollapsed = () => {
+    setCollapsed(!collapsed);
+  };
+
   return (
-  <nav>
-        <Link to="/" className='title'>
-            
-            Website
-        </Link>
-        <div className='menu' onClick={() =>{
-            setMenuOpen(!menuOpen);
-        }}>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-<ul className={menuOpen ? "open" : ""}>
-    <li>
-        <Link to="/About">About</Link>
-    </li>
-    <li>
-    <Link to="/Documentation">Documentation</Link>
-    </li>
-    <li>
-    <Link to="/Contacts">Contacts</Link>
-    </li>
-</ul>
-  </nav>
+    <Sider
+      collapsible
+      collapsed={collapsed}
+      onCollapse={toggleCollapsed}
+      style={{
+        overflow: 'auto',
+        height: '100vh',
+        position: 'fixed',
+        left: 0,
+      }}
+    >
+      <div className='logo'>
+        <Link to="/">Website</Link>
+      </div>
+      <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
+        <Menu.Item key="1">
+          <Link to="/About">About</Link>
+        </Menu.Item>
+        <Menu.Item key="2">
+          <Link to="/Documentation">Documentation</Link>
+        </Menu.Item>
+        <Menu.Item key="3">
+          <Link to="/Contacts">Contacts</Link>
+        </Menu.Item>
+      </Menu>
+    </Sider>
   );
 };
-export default Navbar
+
+export default Navbar;

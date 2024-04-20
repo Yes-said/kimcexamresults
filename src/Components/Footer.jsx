@@ -1,29 +1,15 @@
-// Footer.js
-
 import React from 'react';
+import { Layout } from 'antd'; // Import Layout component from Ant Design
+import './Footer.css'; // Import external CSS file for additional styling
+
+const { Footer: AntFooter } = Layout; // Destructure Footer from Layout
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div>
-        <p>&copy; 2024 Kenya Institute Of Mass Communication. All rights reserved.</p>
-        <p>Contact: info@kimc.com</p>
-      </div>
-    </footer>
+    <AntFooter className="footer">
+      © {new Date().getFullYear()} Kenya Institute Of Mass Communication. All rights reserved
+    </AntFooter>
   );
-};
-
-const styles = {
-  footer: {
-    backgroundColor: 'skyblue',
-    color: '#fff',
-    textAlign: 'center',
-    padding: '20px',
-    position: 'fixed',
-    left: '0',
-    bottom: '0',
-    width: '100%',
-  },
 };
 
 export default Footer;
