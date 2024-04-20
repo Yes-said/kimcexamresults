@@ -21,7 +21,7 @@ const Navbar = () => {
         height: '100vh',
         position: 'fixed',
         left: 0,
-        marginTop: '64px', // Space below TopNav
+        marginTop: '94px', // Space below TopNav
         width: collapsed ? 80 : 200, // Adjusted width for responsiveness
       }}
     >
