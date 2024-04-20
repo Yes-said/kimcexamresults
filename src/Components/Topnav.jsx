@@ -10,10 +10,12 @@ const TopNav = () => {
       defaultSelectedKeys={['home']}
       style={{ 
         lineHeight: '64px',
-        position: 'fixed', // Fixed positioning
+        height: '64px', // Fixed height to create space
         width: '100%', // Take up full width of the viewport
-        zIndex: 1000, // Ensure it's above other content
-        backgroundColor: '#001529' // Example dark background color
+        position: 'fixed',
+        top: 0,
+        zIndex: 1000,
+        backgroundColor: '#001529'
       }}
     >
       <Menu.Item key="home">

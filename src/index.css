@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .logo {
+      display: none; /* Hide logo on smaller screens if necessary */
+    }
+  }
+  
