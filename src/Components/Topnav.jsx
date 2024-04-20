@@ -4,7 +4,18 @@ import { Link } from 'react-router-dom';
 
 const TopNav = () => {
   return (
-    <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['home']} style={{ lineHeight: '64px' }}>
+    <Menu 
+      theme="dark" 
+      mode="horizontal" 
+      defaultSelectedKeys={['home']}
+      style={{ 
+        lineHeight: '64px',
+        position: 'fixed', // Fixed positioning
+        width: '100%', // Take up full width of the viewport
+        zIndex: 1000, // Ensure it's above other content
+        backgroundColor: '#001529' // Example dark background color
+      }}
+    >
       <Menu.Item key="home">
         <Link to="/">Home</Link>
       </Menu.Item>
