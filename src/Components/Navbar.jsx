@@ -25,9 +25,7 @@ const Navbar = () => {
         width: collapsed ? 80 : 200, // Adjusted width for responsiveness
       }}
     >
-      <div className='logo'>
-        <Link to="/">Website</Link>
-      </div>
+      
       <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
         <Menu.Item key="1">
           <Link to="/About">About</Link>

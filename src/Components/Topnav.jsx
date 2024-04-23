@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, Button, Modal, Form, Input } from 'antd';
 import { Link } from 'react-router-dom';
-
+import Logo from '../assets/Logo.png';
 const { Item } = Menu;
 const { TextArea } = Input;
 
@@ -53,6 +53,11 @@ const TopNav = () => {
           backgroundColor: '#001529',
         }}
       >
+        <div className='logo'>
+       <Link to="/">
+            <img src={Logo} alt="Logo" style={{ width: '60px', height: 'auto' }} />
+          </Link>
+      </div>
         <Item key="home">
           <Link to="/">Home</Link>
         </Item>
